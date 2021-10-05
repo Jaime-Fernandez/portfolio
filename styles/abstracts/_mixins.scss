@@ -1,0 +1,13 @@
+@mixin flex{
+  display: flex;
+}
+
+@mixin flexColumn{
+  @include flex;
+  flex-direction: column;
+}
+
+@mixin maxWidth1200{
+  max-width: 1200px;
+  margin: 0 auto;
+}

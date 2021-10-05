@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jaime Fernández</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="https://kit.fontawesome.com/0927dae375.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./script/sketch.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="navContainer">
+      <a href="./index.html"><img src="./assets/img/logos/logo.png" alt="Jaime Fernández Logo"></a>
+      <button class="hamburger" id="hamburger" onclick="showMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navMenu navMenuDesktop" id="navMenu">
+        <a class="isActive" href="./index.html">UX</a>
+        <a href="./pages/ar.html">AR</a>
+        <a href="./pages/genart.html">Generative Art</a>
+        <a href="./pages/about.html">About</a>
+        <a href="./pages/contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="hero">
+      <div class="text">
+        <h1>✌️ Hey! Thanks for visiting.</h1>
+        <p class="delay">Hi. I'm Jaime Fernández and I am a UX Designer and New Media Artist.</p>
+      </div>
+      <div id='sketchDiv'></div>
+    </section>
+    <section class="projects">
+      <div class="card">
+        <article>
+          <h2>01</h2>
+          <h2 class="bold">Mendel's Law Web-app</h2>
+          <p>App designed for students that are learning genetics.</p>
+          <a href="https://www.behance.net/gallery/119974011/UX-Case-Study" target="_blank">Go to project<i class="fas fa-arrow-right"></i></a>
+        </article>
+        <div class="imgContainer">
+          <img src="./assets/img/projects/project01.gif" alt="">
+        </div>
+      </div>
+      <div class="card cardReverse">
+        <article>
+          <h2>02</h2>
+          <h2 class="bold">Sleepy Puppy Branding</h2>
+          <p>UX Research of end user for the music blog's new image.</p>
+          <a href="https://www.behance.net/gallery/117299469/Sleepy-Puppy-Branding" target="_blank">Go to project<i class="fas fa-arrow-right"></i></a>
+        </article>
+        <div class="imgContainer">
+          <img src="./assets/img/projects/project02.gif" alt="">
+        </div>
+      </div>
+      <div class="card">
+        <article>
+          <h2>03</h2>
+          <h2 class="bold">Decibel Converter App</h2>
+          <p>A simple tool that transforms units of Pressure, Voltage and Power to their correspondant dB units.</p>
+          <a href="https://www.behance.net/gallery/122606677/Decibel-Converter-App" target="_blank">Go to project<i class="fas fa-arrow-right"></i></a>
+        </article>
+        <div class="imgContainer">
+          <img src="./assets/img/projects/project03.png" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+      <div class="CTA">
+        <article>
+          <h2 class="bold">Let's work together!</h2>
+          <a class="button" href="./pages/contact.html">Contact me<i class="fas fa-arrow-right"></i></a>
+        </article>
+      </div>
+      <div class="footerContainer">
+        <div class="links">
+          <a href="https://www.facebook.com/sparkarhub/portfolios/ig/chillcollinsmx/" target="_blank"><img src="./assets/img/logos/sparkar_logo.png" alt="Logotipo de Spark Ar"></a>
+          <a href="https://www.hicetnunc.xyz/iridescentgoo/" target="_blank"><img src="./assets/img/logos/hen_logo.png" alt="Logotipo de Hic et Nunc"></a>
+        </div>
+        <a href="mailto:jaime.uxd@gmail.com" class="link-light">jaime.uxd@gmail.com</a>
+      </div>
+  </footer>
+  <script src="./script/main.js"></script>
+</body>
+</html>

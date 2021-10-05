@@ -1,0 +1,64 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+fieldset {
+  max-width: 430px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.form label{
+  margin: 8px 0;
+  display: inline-block;
+}
+
+input[type=text] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 0;
+  padding: 16px;
+  cursor: pointer;
+  border: 2px solid $gray;
+  transition: 0.5s;
+  background-color: $dark;
+  color: $mid;
+
+  &:hover{
+    color: $light;
+    --angle: 0deg;
+    border-image: conic-gradient(from var(--angle), rgba(255,0,185,1), rgba(0,219,255,1), rgba(255,0,185,1)) 1;
+    animation: 2s rotate linear infinite;
+    }
+
+  &:focus{
+    border: 1px solid $gray;
+  }
+}
+
+input[type=submit]{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+  padding: 16px;
+  cursor: pointer;
+  border: 2px solid $light;
+  transition: 0.5s;
+  background-color: $dark;
+  color: $mid;
+
+  &:hover{
+    color: $light;
+    --angle: 0deg;
+    border-image: conic-gradient(from var(--angle), rgba(255,0,185,1), rgba(0,219,255,1), rgba(255,0,185,1)) 1;
+    animation: 2s rotate linear infinite;
+    }
+  }

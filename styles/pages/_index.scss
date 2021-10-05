@@ -1,0 +1,134 @@
+@keyframes slide {
+   0% {
+    transform: translate(-1000px, 0);
+    opacity: 0;
+   }
+   100% {
+     transform: translate(0, 0);
+     opacity: 1;
+   }
+}
+
+.hero{
+  @include flexColumn;
+  @include maxWidth1200;
+  height: calc(85vh + 95.5px);
+
+  & .text{
+      margin-top: auto;
+      padding: 0 24px 32px 24px;
+
+      & h1, p{
+        animation-duration: 2s;
+        animation-name: slide;
+      }
+    }
+}
+
+.delay{
+    animation-delay: 0.3s;
+}
+
+
+#sketchDiv{
+    display: block;
+    position: absolute;
+    top: 95.5px;
+    z-index: -999;
+}
+
+.projects{
+  @include flexColumn;
+  @include maxWidth1200;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  height: 600px;
+
+  & article{
+    @include flexColumn;
+    justify-content: center;
+    width: 35%;
+
+    & h2, p, a{
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    & a{
+      display: flex;
+      align-items: center;
+      color: $mid;
+      transition: 0.5s;
+
+      &:hover{
+        color: $light;
+        transform: translate(15px, 0);
+      }
+    }
+
+
+    & i{
+      padding-left: 12px;
+    }
+  }
+
+  & .imgContainer{
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    width: 65%;
+    overflow: hidden;
+
+    & img{
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+.cardReverse{
+  flex-direction: row-reverse;
+
+  & article{
+    &  h2, p, a{
+      padding-left: 32px;
+    }
+  }
+}
+
+@media only screen and (max-width: $breakpoint) {
+  #sketchDiv{
+    display: none;
+  }
+
+  .card{
+    flex-direction: column-reverse;
+
+    & article{
+      width: 100%;
+      margin-bottom: 16px;
+
+      & h2, p, a{
+        padding: 16px 16px 0 16px;
+        margin: 0;
+      }
+    }
+
+    & .imgContainer{
+      width: 100%;
+
+      & img{
+        height: auto;
+      }
+    }
+  }
+
+  .cardReverse{
+    flex-direction: column-reverse;
+  }
+}

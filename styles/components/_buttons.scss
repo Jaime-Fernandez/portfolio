@@ -1,0 +1,31 @@
+a.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+  padding: 16px;
+  cursor: pointer;
+  border: 2px solid $light;
+  transition: 0.5s;
+  color: $mid;
+
+  &:hover{
+  color: $light;
+  --angle: 0deg;
+  border-image: conic-gradient(from var(--angle), rgba(255,0,185,1), rgba(0,219,255,1), rgba(255,0,185,1)) 1;
+  animation: 2s rotate linear infinite;
+  }
+}
+
+
+@keyframes rotate {
+to {
+  --angle: 360deg;
+}
+}
+
+@property --angle {
+syntax: '<angle>';
+initial-value: 0deg;
+inherits: false;
+}

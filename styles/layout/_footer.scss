@@ -1,0 +1,41 @@
+footer{
+  padding: 0 32px 32px 32px;
+
+  & div.footerContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & div.links{
+      display: flex;
+      flex-direction: row;
+      & a{
+        display: flex;
+        align-items: center;
+
+        & img{
+          height: 16px;
+          padding-right: 32px;
+        }
+
+      }
+    }
+  }
+
+  & div.CTA{
+    max-width: 600px;
+    margin: 0 auto;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    & i{
+      padding-left: 12px;
+    }
+  }
+}

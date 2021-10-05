@@ -1,0 +1,40 @@
+.genartGallery{
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 95.5px;
+}
+
+.genartContainer{
+    flex: 0 1 298px;
+    border: 1px solid $dark;
+    display: flex;
+    overflow: hidden;
+    height: 298px;
+
+    & img{
+      width: 100%;
+      height: 298px;
+      object-fit: cover;
+      object-position: center;
+    }
+    & .overlay{
+      width: 298px;
+      height: 298px;
+      margin-top: auto;
+      position: absolute;
+      opacity: 0;
+      transition: 0.5s;
+      background-color: $overlay;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+}
