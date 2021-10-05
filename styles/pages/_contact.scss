@@ -19,7 +19,7 @@ fieldset {
   display: inline-block;
 }
 
-input[type=text] {
+input[type=text], textarea{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,6 +30,8 @@ input[type=text] {
   transition: 0.5s;
   background-color: $dark;
   color: $mid;
+  font-family: 'Heebo', sans-sans-serif;
+  resize: none;
 
   &:hover{
     color: $light;
