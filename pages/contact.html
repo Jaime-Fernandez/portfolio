@@ -10,6 +10,12 @@
   <link rel="stylesheet" href="../styles/main.css">
   <script src="https://kit.fontawesome.com/0927dae375.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+  (function() {
+  emailjs.init("user_Jt5rF7HUgV0vhSZtDv27f");
+  })();
+  </script>
 </head>
 <body>
   <nav>
@@ -34,16 +40,17 @@
         <h1>🤝 Let's work together!</h1>
     </section>
     <section class="form">
-      <form action="" method="get">
+      <form id="contact-form">
         <fieldset>
           <legend><h2 class="bold">Get in touch.</h2></legend>
-          <label for="name">Name</label>
-          <input type="text" name="name" placeholder="Your Name">
-          <label for="email">Email</label>
-          <input type="text" name="email" placeholder="Your Email">
-          <label for="message">Message</label>
+          <input type="hidden" name="contact_number">
+          <label>Name</label>
+          <input type="text" name="user_name" placeholder="Your Name">
+          <label>Email</label>
+          <input type="email" name="user_email" placeholder="Your Email">
+          <label>Message</label>
           <textarea name="message" placeholder="Message"></textarea>
-          <input type="submit" value="Submit">
+          <input type="submit" value="Send">
         </fieldset>
       </form>
     </section>
