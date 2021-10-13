@@ -1,7 +1,6 @@
 .genartGallery{
   display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
+  @include maxWidth1200;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 95.5px;
@@ -28,9 +27,7 @@
       opacity: 0;
       transition: 0.5s;
       background-color: $overlay;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include center;
       text-align: center;
 
       &:hover{

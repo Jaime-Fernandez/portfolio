@@ -1,7 +1,6 @@
 .arGallery{
   display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
+  @include maxWidth1200;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 95.5px;
@@ -27,8 +26,7 @@
 }
 
 .textContainer{
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
     align-content: space-betwee;
     padding: 16px;
 

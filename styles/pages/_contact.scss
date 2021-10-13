@@ -1,16 +1,13 @@
 .form{
-  display: flex;
-  flex-direction: column;
-  max-width: 1200px;
-  margin: 0 auto;
+  @include flexColumn;
+  @include maxWidth1200;
   padding: 24px;
 }
 
 fieldset {
   max-width: 430px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  @include flexColumn;
   border: none;
 }
 
@@ -20,9 +17,7 @@ fieldset {
 }
 
 input[type=text], input[type=email], textarea{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include center;
   margin: 8px 0;
   padding: 16px;
   cursor: pointer;
@@ -46,9 +41,7 @@ input[type=text], input[type=email], textarea{
 }
 
 input[type=submit]{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include center;
   margin: 16px 0;
   padding: 16px;
   cursor: pointer;
