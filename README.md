@@ -1,2 +1,2 @@
 # website
-This is my personal portfolio, still in progress :)
+This is my personal portfolio, thanks for visiting :)
