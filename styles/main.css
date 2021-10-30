@@ -607,7 +607,7 @@ a.button:hover {
 .who {
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  max-width: 600px;
   margin: 0 auto;
   height: 500px;
   justify-content: center;
@@ -636,7 +636,7 @@ a.button:hover {
     width: 100%;
     margin-bottom: 16px;
   }
-  .cardBio article h2, .cardBio article p {
+  .cardBio article h2 {
     padding: 16px 16px 0 16px;
     margin: 0;
   }
